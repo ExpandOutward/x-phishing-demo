@@ -78,9 +78,9 @@
     jsonStatus.textContent = "Waiting for a login attempt";
     jsonStatus.classList.remove("is-live");
     jsonOutput.innerHTML =
-      '<span class="json-placeholder">This panel stays empty until you submit the form.\n\nA phishing kit would POST this file to the attacker the moment you click Log in. This demo never writes it to disk, never puts it in storage, and never sends it anywhere.</span>';
+      '<span class="json-placeholder">This text will be replaces with the contents of the JSON file typically sent to hackers.</span>';
     jsonNote.textContent =
-      "IP and location are looked up in your browser only so you can see what a kit would attach. They are not saved.";
+      "Email/username and Password come from the form. IP and location are pulled from your browser.";
     resetBtn.hidden = true;
   }
 
