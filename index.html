@@ -12,26 +12,31 @@
 
     <header class="edu-banner" role="alert">
       <div class="edu-banner__inner">
-        <p class="edu-banner__kicker">Educational phishing demo · nothing is stored or sent</p>
-        <h1>Do not enter your real X username or password.</h1>
+        <p class="edu-banner__kicker">X Phishing Demo · No data is stored or sent</p>
+        <h1><span style='color:red'>Do not</span> enter your real X username or password.</h1>
         <p class="edu-banner__lead">
-          Scammers send fake DMs, emails, or texts that look like they came from X.
-          The link opens a page that copies the real sign-in screen. Whatever you
-          type is packed into a JSON payload with your IP address and location,
-          then shipped to the attacker. This page shows that payload on the right
-          instead of stealing it.
+          I created this application after multiple mutual followers on X lost access to their
+          accounts due to sophisticated phishing schemes. 
         </p>
+        <p>I have been targeted for this hack in two different ways:</p>
+        <ul>
+          <li>User was asked to vote for a user to be on a podcast.</li>
+          <li>User was told that their account was inadvertently reported and that they needed to address it.</li>
+        </ul>
         <ol class="edu-steps">
           <li>
-            <strong>The bait.</strong> A lookalike login page is enough to feel official.
+            <strong>I</strong> A user receives a message on X, directing them to a page where they are prompted to log in.
           </li>
           <li>
-            <strong>The harvest.</strong> Username, password, IP, and location are bundled as JSON.
+            <strong>II</strong> The user attempts to log in, inadvertently sending their login credentials to a hacker.
           </li>
           <li>
-            <strong>The handoff.</strong> A real kit silently uploads that JSON. This demo only displays it.
+            <strong>III</strong> The hacker uses the credentials to access the account and changes the email / password.
           </li>
         </ol>
+        <p>The form below works exactly like the hack. Therefore, it is <span style="color:red">NOT</span> necessary to enter your real username and 
+        password. No values are stored or sent. They are only displayed so that you can see how the hack works. Had this been a real phishing site, 
+        the form below would be sent to a hacker which would provide them with your login details.
         <p class="edu-banner__hint">
           Type a fake name like <code>demo_user</code> and a fake password like
           <code>not-my-real-password</code>.
@@ -145,12 +150,12 @@
           </div>
           <p class="json-pane__status" id="json-status">Waiting for a login attempt</p>
         </div>
-        <pre class="json-pane__body" id="json-output" aria-live="polite"><span class="json-placeholder">This panel stays empty until you submit the form.
-
-A phishing kit would POST this file to the attacker the moment you click Log in. This demo never writes it to disk, never puts it in storage, and never sends it anywhere.</span></pre>
+        <pre class="json-pane__body" id="json-output" aria-live="polite"><span class="json-placeholder">
+          This text will be replaces with the contents of the JSON file typically sent to hackers.
+        </span></pre>
         <div class="json-pane__foot">
           <p id="json-note">
-            IP and location are looked up in your browser only so you can see what a kit would attach. They are not saved.
+            Email/username and Password come from the form. IP and location are pulled from your browser.
           </p>
           <button type="button" class="btn btn--ghost" id="reset-btn" hidden>Clear display</button>
         </div>
