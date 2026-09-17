@@ -1,0 +1,1 @@
+This tool was created to help users on X understand how phishing hacks work. It does not collect or store information. Users are also encouraged NOT to use their actual credentials. This application is for educational purposes only. 
